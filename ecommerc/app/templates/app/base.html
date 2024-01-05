@@ -38,13 +38,11 @@
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   
-                  <li><a class="dropdown-item" href="#">Milk</a></li>
-                  <li><a class="dropdown-item" href="#">Curd</a></li>
-                  <li><a class="dropdown-item" href="#">Milkshake</a></li>
-                  <li><a class="dropdown-item" href="#">Lassi</a></li>
-                  <li><a class="dropdown-item" href="#">Ghee</a></li>
-                  <li><a class="dropdown-item" href="#">Cheese</a></li>
-                  <li><a class="dropdown-item" href="#">Ice-creams</a></li>
+                  <li><a class="dropdown-item" href="{% url "category" 'ML' %}">Milk</a></li>
+                  <li><a class="dropdown-item" href="{% url "category" 'EL' %}">Elevage</a></li>
+                  <li><a class="dropdown-item" href="{% url "category" 'AG' %}">Agricole</a></li>
+                  <li><a class="dropdown-item" href="{% url "category" 'AL' %}">Alimentaire</a></li>
+                  <li><a class="dropdown-item" href="{% url "category" 'CX' %}">Connexes</a></li>
 
                 </ul>
             </li>
