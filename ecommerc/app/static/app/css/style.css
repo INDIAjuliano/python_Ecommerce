@@ -85,6 +85,8 @@
     text-decoration: none;
 }
 
-body {
-    background-color: red;
+
+
+.container_carousel{
+    margin: 4px 20px;
 }
