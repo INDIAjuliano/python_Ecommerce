@@ -1,0 +1,27 @@
+{% extends "app/base.html" %}
+{% load static %}
+{% block title %}Contact{% endblock title %}
+
+{% block banner-slider %}
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="{% static 'app/images/banner/b1.jpg' %}" alt="banner image">
+      </div>
+      <!-- ... (autres images du slider) ... -->
+    </div>
+</div>
+{% endblock banner-slider %}
+
+{% block main-content %}
+  <div class="container mt-3">
+    <br>
+    <div class="text-center">Contact Us</div>
+    <br>
+    <div class="row container">
+      <p class="fs-4 text-center">Address: 123 Main Street, Cityville</p>
+      <p class="fs-4 text-center">Contact: +1 (555) 123-4567</p>
+      <p class="fs-4 text-center">Email: contact@example.com</p>
+    </div>
+  </div>
+{% endblock main-content %}
