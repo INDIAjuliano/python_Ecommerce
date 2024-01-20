@@ -65,15 +65,17 @@
                   India
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="profileDropdown">
-                    <li><a class="dropdown-item" href="#">Profil</a></li>
-                    <li><a class="dropdown-item" href="#">Orders</a></li>
+                    <li><a class="dropdown-item" href="{% url "profile" %}">Profil</a></li>
+                    <li><a class="dropdown-item" href="{% url "adress"%}">Adress</a></li>
                     <li><a class="dropdown-item" href="#">change Password</a></li>
-                    <li><a class="dropdown-item" href="#">Logout</a></li>
-                    {% comment %} <li><a class="dropdown-item" href="{% url "Profil" %}">Profil</a></li>
+                    <li><a class="dropdown-item" href="#">L ogout</a></li>
+                </ul> 
+                {% comment %} <ul class="dropdown-menu" aria-labelledby="profileDropdown">
+                    <li><a class="dropdown-item" href="{% url "profil" %}">Profil</a></li>
                     <li><a class="dropdown-item" href="{% url "orders" %}">Orders</a></li>
                     <li><a class="dropdown-item" href="{% url "changepassword" %}">change Password</a></li>
-                    <li><a class="dropdown-item" href="{% url "logout" %}">L ogout</a></li> {% endcomment %}
-                </ul>
+                    <li><a class="dropdown-item" href="{% url "logout" %}">L ogout</a></li>
+                </ul> {% endcomment %}
             </li>
             <li class="nav-item mx-2">
                 <a href="#" class="nav-link text-white"> Cart 4</a>
@@ -82,10 +84,10 @@
                 <a href="#" class="nav-link text-white"> Wishlist 4</a>
             </li>
             <li class="nav-item mx-2">
-                <a href="#" class="nav-link text-white"> Login</a>
+                <a href="{% url 'login'%}" class="nav-link text-white"> Login</a>
             </li>
             <li class="nav-item mx-2">
-                <a href="#" class="nav-link text-white"> Registration</a>
+                <a href="{% url 'customerregistration'%}" class="nav-link text-white"> Registration</a>
             </li>
           </ul>
         </div>
